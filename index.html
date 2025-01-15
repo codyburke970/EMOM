@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMOM Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/nosleep.js@0.12.0/dist/NoSleep.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>EMOM Timer</h1>
+        <div class="timer-display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <input type="number" id="roundsInput" min="1" value="10" placeholder="Number of rounds">
+            <button id="startBtn">Start</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div class="round-info">
+            Round: <span id="currentRound">0</span>/<span id="totalRounds">0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
