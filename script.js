@@ -1,5 +1,5 @@
 let timer;
-let timeLeft;
+let timeLeft = 60;
 let currentRound = 0;
 let totalRounds;
 let isRunning = false;
