@@ -10,16 +10,24 @@
 <body>
     <div class="container">
         <h1>EMOM Timer</h1>
-        <div class="timer-display">
-            <span id="minutes">00</span>:<span id="seconds">00</span>
+        <div class="display-container">
+            <div class="timer-group">
+                <div class="display-label">Seconds</div>
+                <div class="timer-display">
+                    <span id="seconds">60</span>
+                </div>
+            </div>
+            <div class="timer-group">
+                <div class="display-label">Round</div>
+                <div class="round-display">
+                    <span id="currentRound">0</span>
+                </div>
+            </div>
         </div>
         <div class="controls">
             <input type="number" id="roundsInput" min="1" value="10" placeholder="Number of rounds">
             <button id="startBtn">Start</button>
             <button id="resetBtn">Reset</button>
-        </div>
-        <div class="round-info">
-            Round: <span id="currentRound">0</span>/<span id="totalRounds">0</span>
         </div>
     </div>
     <script src="script.js"></script>
